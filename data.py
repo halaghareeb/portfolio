@@ -201,7 +201,7 @@ DASHBOARDS = [
     {
         "title": "Running Performance Analytics Dashboard",
         "image": "/static/images/running-analytics-dashboard.png",
-        "url": "https://github.com/HalaAbdelmaksoud/running-analytics-dashboard",
+        "url": "https://github.com/halaghareeb/running-analytics-dashboard",
         "button_label": "View on GitHub",
     },
 ]
