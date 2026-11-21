@@ -10,6 +10,7 @@ Export a static copy (for GitHub Pages, Netlify, ...):
 import sys
 from datetime import date
 from pathlib import Path
+import os
 
 from flask import Flask, render_template
 
@@ -77,15 +78,20 @@ def freeze(out_dir="build"):
         shutil.rmtree(out)
     shutil.copytree(Path(app.root_path) / "static", out / "static")
 
+    # On GitHub Pages a project site lives under /<repo-name>/, so links must carry that prefix.
+    base = os.environ.get("BASE_PATH", "").rstrip("/")
+    base_url = f"http://localhost{base}/"
+
     client = app.test_client()
     routes = [r.rule for r in app.url_map.iter_rules() if r.endpoint != "static"]
     for rule in routes:
-        html = client.get(rule).get_data(as_text=True)
+        html = client.get(rule, base_url=base_url).get_data(as_text=True)
         target = out / "index.html" if rule == "/" else out / rule.strip("/") / "index.html"
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(html, encoding="utf-8")
         print("wrote", target)
-    (out / "404.html").write_text(client.get("/__missing__").get_data(as_text=True), encoding="utf-8")
+    (out / "404.html").write_text(
+        client.get("/__missing__", base_url=base_url).get_data(as_text=True), encoding="utf-8")
 
 
 if __name__ == "__main__":
