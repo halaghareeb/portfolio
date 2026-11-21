@@ -78,7 +78,7 @@ EDUCATION = [
 EXPERIENCE = [
     {
         "title": "GIS Instructor",
-        "date": "Jan 2021 – Present",
+        "date": "Jan 2021 – Sep 2026",
         "Affiliations": ["Freelance, Remote"],
         "highlights": [
             {"text": "Delivering GIS training courses and technical instruction."},
