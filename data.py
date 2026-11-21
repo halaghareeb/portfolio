@@ -18,7 +18,7 @@ NAV = [
 
 SOCIAL = [
     {"name": "LinkedIn", "icon": "linkedin", "url": "https://www.linkedin.com/in/halaghareeb/"},
-    {"name": "GitHub", "icon": "github", "url": "https://github.com/HalaAbdelmaksoud"},
+    {"name": "GitHub", "icon": "github", "url": "https://github.com/halaghareeb"},
     {"name": "YouTube", "icon": "youtube", "url": "https://www.youtube.com/@Hala_Ghareeb"},
     {"name": "Esri Community", "icon": "community",
      "url": "https://community.esri.com/t5/user/viewprofilepage/user-id/469987"},
