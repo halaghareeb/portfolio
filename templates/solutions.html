@@ -12,7 +12,7 @@
     <div class="grid grid-3">
       {% for s in solutions %}
       <article class="project-card reveal">
-        <img class="thumb" src="{{ s.image }}" alt="Screenshot of {{ s.title }}" loading="lazy" data-zoom>
+        <img class="thumb" src="{{ s.image | asset }}" alt="Screenshot of {{ s.title }}" loading="lazy" data-zoom>
         <div class="body">
           <h3>{{ s.title }}</h3>
           <div class="actions">{{ ext_btn(s.url) }}</div>

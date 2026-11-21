@@ -44,7 +44,7 @@
 {% macro feature(item, index) %}
 <article class="feature reveal{% if index is odd %} reverse{% endif %}{% if not item.image %} no-media{% endif %}">
   {% if item.image %}
-  <div class="feature-media"><img src="{{ item.image }}" alt="{{ item.title }}" loading="lazy" data-zoom></div>
+  <div class="feature-media"><img src="{{ item.image | asset }}" alt="{{ item.title }}" loading="lazy" data-zoom></div>
   {% endif %}
   <div>
     {% if item.tagline %}<span class="tag-line">{{ item.tagline }}</span>{% endif %}

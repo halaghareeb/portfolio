@@ -11,7 +11,7 @@
     <div class="grid grid-3">
       {% for dashboard in dashboards %}
       <article class="project-card reveal">
-        <img class="thumb" src="{{ dashboard.image }}" alt="Screenshot of {{ dashboard.title }}" loading="lazy" data-zoom>
+        <img class="thumb" src="{{ dashboard.image | asset }}" alt="Screenshot of {{ dashboard.title }}" loading="lazy" data-zoom>
         <div class="body">
           <h3>{{ dashboard.title }}</h3>
           {% if dashboard.url %}

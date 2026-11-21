@@ -14,7 +14,7 @@
       {% for p in lidar.paragraphs %}<p>{{ p }}</p>{% endfor %}
       <div class="gallery gallery-4">
         {% for img in lidar.images %}
-        <img src="{{ img }}" alt="LiDAR training image {{ loop.index }}" loading="lazy" data-zoom>
+        <img src="{{ img | asset }}" alt="LiDAR training image {{ loop.index }}" loading="lazy" data-zoom>
         {% endfor %}
       </div>
     </article>

@@ -12,11 +12,20 @@ from datetime import date
 from pathlib import Path
 import os
 
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 
 import data
 
 app = Flask(__name__)
+
+
+@app.template_filter("asset")
+def asset(path):
+    """Turn a "/static/..." path into a proper URL (adds the /portfolio prefix on GitHub Pages).
+    Full web addresses (https://...) are returned unchanged."""
+    if path and path.startswith("/static/"):
+        return url_for("static", filename=path[len("/static/"):])
+    return path
 
 
 @app.context_processor
