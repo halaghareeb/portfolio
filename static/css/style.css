@@ -142,10 +142,8 @@ main { min-height: 60vh; }
 /* ---------- Home hero ---------- */
 .hero {
   padding: 48px 0;
-  background:
-    radial-gradient(circle at 85% 20%, rgba(15, 118, 110, .10), transparent 45%),
-    radial-gradient(circle at 10% 90%, rgba(56, 132, 200, .08), transparent 40%),
-    var(--bg);
+  /* same top-to-bottom gradient as the .page-hero banner on the other pages */
+  background: linear-gradient(180deg, var(--accent-soft) 0%, var(--bg) 100%);
 }
 .hero-grid {
   display: grid; grid-template-columns: 1.25fr 1fr; gap: 56px; align-items: center;
