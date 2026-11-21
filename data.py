@@ -180,7 +180,7 @@ DASHBOARDS = [
         "url": "https://esrieg.maps.arcgis.com/apps/dashboards/5944e6ed85544af29299702b2a8c1d02#",
     },
     {
-        "title": "History of Orders",
+        "title": "GID Water Orders & Delivery Tracking Dashboard",
         "image": IMG + "642-6d82cb11/screenshot_4_26_2026_12-00-28%20AM.png",
         "url": "https://esrina.maps.arcgis.com/apps/dashboards/766f60fc38594715a0f933f855d6b876#",
     },
