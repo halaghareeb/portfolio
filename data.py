@@ -93,7 +93,7 @@ EXPERIENCE = [
         "Affiliations": ["Esri North Africa (Esri NA), New Cairo, Egypt"],
         "highlights": [
             {"text": "Translating business requirements to tailored solutions and applications."},
-            {"text": "Developed solutions for environment, AEC, Conservation and Sustainability, education, agriculture, retail, "
+            {"text": "Developed solutions for environment, AEC, conservation and sustainability, education, agriculture, retail, "
                      "banking, manufacturing, distribution, and fleet management."},
             {"text": "Developed GIS geoportals, dashboards, and web applications to visualize data, maps and insights."},
             {"text": "Prepared technical proposals in response to client requirements and tenders."},
@@ -194,7 +194,7 @@ DASHBOARDS = [
         "url": "https://esrina.maps.arcgis.com/apps/dashboards/a6dda17bc6534efe9c91d5891f0644e5#locale=ar",
     },
     {
-        "title": "Tunisia School Feeding Program Dashboard",
+        "title": "Children nutrition at tunisian schools - WFP project",
         "image": "/static/images/school-feeding-tunisia-dashboard.png",
         "url": "https://esrieg.maps.arcgis.com/apps/dashboards/f6e63b20f56c4e3a8a4fb8f7a363e3cf#locale=ar",
     },

@@ -47,35 +47,35 @@ def home():
 
 @app.route("/solutions")
 def solutions():
-    return render_template("solutions.html", title="Solutions | Hala Ghareeb", solutions=data.SOLUTIONS)
+    return render_template("solutions.html", title="Hala Ghareeb | Solutions", solutions=data.SOLUTIONS)
 
 
 @app.route("/dashboards")
 def dashboards():
-    return render_template("dashboards.html", title="Dashboards | Hala Ghareeb", dashboards=data.DASHBOARDS)
+    return render_template("dashboards.html", title="Hala Ghareeb | Dashboards", dashboards=data.DASHBOARDS)
 
 
 @app.route("/educational-projects")
 def educational_projects():
-    return render_template("educational_projects.html", title="Educational Projects | Hala Ghareeb",
+    return render_template("educational_projects.html", title="Hala Ghareeb | Educational Projects",
                            projects=data.EDUCATIONAL_PROJECTS)
 
 
 @app.route("/achievements")
 def achievements():
-    return render_template("achievements.html", title="Achievements | Hala Ghareeb",
+    return render_template("achievements.html", title="Hala Ghareeb | Achievements",
                            achievements=data.ACHIEVEMENTS)
 
 
 @app.route("/training-and-skills")
 def training_and_skills():
-    return render_template("training_and_skills.html", title="Training and Skills | Hala Ghareeb",
+    return render_template("training_and_skills.html", title="Hala Ghareeb | Training and Skills",
                            lidar=data.LIDAR, projects=data.TRAINING_PROJECTS)
 
 
 @app.errorhandler(404)
 def not_found(_error):
-    return render_template("404.html", title="Page not found | Hala Ghareeb"), 404
+    return render_template("404.html", title="Hala Ghareeb | Page not found"), 404
 
 
 def freeze(out_dir="build"):
