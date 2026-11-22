@@ -222,6 +222,19 @@ EDUCATIONAL_PROJECTS = [
         "links": [("View", "http://hdl.handle.net/10362/201268")],
     },
     {
+        "title": "Flood Change Detection with Sentinel-2, Valencia",
+        "subtitle": "Satellite imagery analysis of the October 2024 flood",
+        "paragraphs": [
+            "In a team of four at NOVA IMS, we analyzed pre- and post-flood Copernicus Sentinel-2 imagery in "
+            "ArcGIS Pro to assess how the flood changed urban areas, agricultural land and wetlands in Valencia, Spain.",
+            "Our workflow combined spectral indices (NDVI, NDWI and NDBI), unsupervised (ISODATA) and supervised "
+            "(maximum likelihood) classification, accuracy assessment and change detection. The map shows the areas "
+            "where land cover changed between 26 October and 20 November 2024.",
+        ],
+        "image": "/static/images/valencia-flood-change-detection.jpg",
+        "links": [],
+    },
+    {
         "title": "UAV Study Platform",
         "subtitle": "Monitoring platform for the River Aa in Münster",
         "paragraphs": [
