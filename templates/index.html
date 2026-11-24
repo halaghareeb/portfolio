@@ -40,7 +40,7 @@
               {% if h.link_label %}
               <li>{{ h.text }}<a href="{{ h.link }}" target="_blank" rel="noopener">{{ h.link_label }}</a>{{ h.after }}</li>
               {% else %}
-              <li>{{ h.text }}{% if h.link %} (<a href="{{ h.link }}" target="_blank" rel="noopener">View</a>){% endif %}</li>
+              <li>{{ h.text | ordinals }}{% if h.link %} (<a href="{{ h.link }}" target="_blank" rel="noopener">View</a>){% endif %}</li>
               {% endif %}
               {% endfor %}
             </ul>

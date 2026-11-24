@@ -7,12 +7,14 @@ Run locally:
 Export a static copy (for GitHub Pages, Netlify, ...):
     python app.py freeze     # writes plain HTML files to ./build
 """
+import re
 import sys
 from datetime import date
 from pathlib import Path
 import os
 
 from flask import Flask, render_template, url_for
+from markupsafe import Markup, escape
 
 import data
 
@@ -26,6 +28,12 @@ def asset(path):
     if path and path.startswith("/static/"):
         return url_for("static", filename=path[len("/static/"):])
     return path
+
+
+@app.template_filter("ordinals")
+def ordinals(text):
+    """Raise ordinal endings so "5th" displays as 5 with a superscript "th" (text is escaped first)."""
+    return Markup(re.sub(r"\b(\d+)(st|nd|rd|th)\b", r"\1<sup>\2</sup>", str(escape(text or ""))))
 
 
 @app.context_processor
