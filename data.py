@@ -71,7 +71,7 @@ EDUCATION = [
         "highlights": [
             {"text": "Graduation project (grade: Excellent): developed a GIS-based framework to identify "
                      "optimal routes for potential road networks."},
-            {"text": "Ranked 5th of 100+ students by cumulative grade over the five-year program."},
+            {"text": "Ranked 5th out of 100+ students by cumulative grade over the five-year program."},
         ],
         "topics": ["GIS", "Geospatial Statistics", "Remote Sensing", "Surveying", "3D High-Precision Mapping",
                    "Map Projection", "Geodesy", "GPS", "Photogrammetry", "Road Design"],
