@@ -44,7 +44,7 @@ EDUCATION = [
             "Institute of New Imaging Technologies (INIT), Universitat Jaume I (UJI), Castellón, Spain",
         ],
         "highlights": [
-            {"text": "Thesis (grade: 18/20): ",
+            {"text": "Thesis (grade: Excellent 18/20): ",
              "link_label": "The Impact of Prior Survey Knowledge and Virtual Global Landmarks on "
                            "Spatial Knowledge Acquisition",
              "after": ".",
