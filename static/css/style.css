@@ -237,7 +237,7 @@ main { min-height: 60vh; }
 .explore-card:hover .explore-icon { background: var(--accent); color: #fff; transform: scale(1.06); }
 .explore-card span { font-weight: 700; font-size: 1.05rem; }
 .explore-grid { grid-template-columns: repeat(5, 1fr); }
-.highlight-green { background: #e3f5e5; color: #1b6e34; font-weight: 600; padding: 1px 8px; border-radius: 6px; }
+.highlight-green { background: var(--accent-soft); color: var(--accent); font-weight: 600; padding: 1px 8px; border-radius: 6px; }
 .references-note { margin: 40px 0 0; text-align: center; font-style: italic; font-size: .9rem; color: var(--text-muted); }
 @media (max-width: 1024px) { .explore-grid { grid-template-columns: repeat(3, 1fr); } }
 @media (max-width: 640px)  { .explore-grid { grid-template-columns: repeat(2, 1fr); } }
