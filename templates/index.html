@@ -70,7 +70,7 @@
               {% for affiliation in exp.Affiliations %}<li>{{ affiliation }}</li>{% endfor %}
             </ul>
             <ul class="highlights">
-              {% for h in exp.highlights %}<li>{{ h.text }}</li>{% endfor %}
+              {% for h in exp.highlights %}<li>{% if h.green %}<span class="highlight-green">{{ h.text }}</span>{% else %}{{ h.text }}{% endif %}</li>{% endfor %}
             </ul>
             <p class="topics-label">Skills</p>
             <ul class="tags">
