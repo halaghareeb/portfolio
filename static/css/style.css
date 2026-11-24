@@ -197,6 +197,9 @@ main { min-height: 60vh; }
 }
 .edu-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; align-items: baseline; }
 .edu-head h3 { margin: 0; font-size: 1.15rem; }
+/* Small link button that reuses the date pill colours */
+.link-pill { display: inline-block; margin-left: 4px; text-decoration: none; vertical-align: 1px; transition: background .2s, color .2s; }
+.link-pill:hover, .link-pill:focus-visible { background: var(--accent); color: #fff; text-decoration: none; }
 .date {
   font-size: .8rem; font-weight: 600; color: var(--accent); background: var(--accent-soft);
   padding: 2px 8px; border-radius: 999px; white-space: nowrap;
