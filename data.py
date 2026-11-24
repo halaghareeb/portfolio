@@ -58,7 +58,7 @@ EDUCATION = [
         "title": "9-Month Diploma Scholarship in Geoinformatics",
         "date": "Sep 2019 – Jun 2020",
         "institutions": ["Information Technology Institute (ITI), Egypt"],
-        "highlights": [{"text": "Graduation project: (Not formally graded) A road-maintenance web application, "
+        "highlights": [{"text": "Graduation project (Not formally graded): A road-maintenance web application, "
                                 "a collaboration with Namaa Company."}],
         "topics": ["GIS", "Computer Networks", "Programming & Scripting (C#, Python, .NET, MERN)",
                    "Client-Side Technologies", "Machine Learning (SAS)", "Remote Sensing",
