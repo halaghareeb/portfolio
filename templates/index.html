@@ -37,7 +37,11 @@
             </ul>
             <ul class="highlights">
               {% for h in e.highlights %}
+              {% if h.link_label %}
+              <li>{{ h.text }}<a href="{{ h.link }}" target="_blank" rel="noopener">{{ h.link_label }}</a>{{ h.after }}</li>
+              {% else %}
               <li>{{ h.text }}{% if h.link %} (<a href="{{ h.link }}" target="_blank" rel="noopener">View</a>){% endif %}</li>
+              {% endif %}
               {% endfor %}
             </ul>
             <p class="topics-label">Covered topics</p>
