@@ -38,7 +38,7 @@
             <ul class="highlights">
               {% for h in e.highlights %}
               {% if h.link_label %}
-              <li>{{ h.text }}{{ h.link_label }}{{ h.after }} <a class="date link-pill" href="{{ h.link }}" target="_blank" rel="noopener">View thesis</a></li>
+              <li>{{ h.text }}{{ h.link_label }}{{ h.after }} <a class="date link-pill" href="{{ h.link }}" target="_blank" rel="noopener" aria-label="View thesis">View</a></li>
               {% else %}
               <li>{{ h.text | ordinals }}{% if h.link %} (<a href="{{ h.link }}" target="_blank" rel="noopener">View</a>){% endif %}</li>
               {% endif %}
