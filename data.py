@@ -66,9 +66,9 @@ EDUCATION = [
         "date": "Sep 2014 – Jul 2019",
         "institutions": ["Faculty of Engineering at Shoubra, Benha University, Egypt"],
         "highlights": [
-            {"text": "Graduation project: Developed a GIS-based framework to identify optimal routes "
-                     "for potential road networks."},
-            {"text": "Ranked fifth in my class"},
+            {"text": "Graduation project (grade: Excellent): developed a GIS-based framework to identify "
+                     "optimal routes for potential road networks."},
+            {"text": "Ranked 5th of 100+ students by cumulative grade over the five-year program."},
         ],
         "topics": ["GIS", "Geospatial Statistics", "Remote Sensing", "Surveying", "3D High-Precision Mapping",
                    "Map Projection", "Geodesy", "GPS", "Photogrammetry", "Road Design"],
