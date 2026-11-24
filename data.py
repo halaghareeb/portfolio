@@ -28,7 +28,7 @@ SOCIAL = [
 PROFILE = {
     "name": "Hala Ghareeb",
     "role": "Geospatial Engineer",
-    "photo": IMG + "828-37386edb/WhatsApp%20Image%202026-10-11%20at%2011.14.58%20AM.webp",
+    "photo": "/static/images/profile.jpeg",
     "sub": "Turning complex data into clear insights by delivering robust solutions and Insights that create real-world impact.",
     "skills": ["GeoAI", "Machine learning", "Python", "Data analytics",
                "Smart Cities", "Sustainability and conservation"],
